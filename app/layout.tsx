@@ -3,6 +3,8 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import React from "react";
 import Navbar from "@/components/NavBar";
+import logo_horizontal from "@/public/logo_horiziotal.png";
+import Image from "next/image";
 
 const inter = Inter({ subsets: ['cyrillic'] })
 
@@ -19,8 +21,13 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body className={inter.className}>
+      <div className={'bg-black'}>
+      <Image
+          className={'w-full p-5 bg-black  md:hidden '}
+          src={logo_horizontal} alt={'logo'}/>
       <Navbar />
       {children}
+      </div>
       </body>
     </html>
   )

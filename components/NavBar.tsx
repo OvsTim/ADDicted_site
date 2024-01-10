@@ -8,12 +8,9 @@ import { ImBubble2 } from "react-icons/im";
 import { ImCalendar } from "react-icons/im";
 const Navbar = () => {
 
-    return (<div className="sticky top-0 bg-red-600 z-10">
-    <header>
+    return (<div className="sticky top-0 z-10 ">
+            <header>
              <div className={'bg-black m-auto h-full flex flex-col place-items-center md:flex-row md:place-content-between border-b-[1px] '}>
-                 <Image
-                     className={'w-10/12 p-[20px]  md:hidden'}
-                     src={logo_horizontal} alt={'logo'}/>
                  <Image
                      className={'m-2 p-5 aspect-auto w-[100px] hidden md:w-[100px] md:flex lg:w-[124px]'}
                      src={logo} alt={'logo'}/>
@@ -40,7 +37,7 @@ const Navbar = () => {
 
              </div>
             <div
-                className={'w-full space-y-7 py-5 bg-black place-content-evenly place-items-center flex flex-col md:hidden'}>
+                className={'w-full space-y-7 pt-5 mb-5 bg-black place-content-evenly place-items-center flex flex-col md:hidden'}>
                 <Link
                     className={'text-white text-xl flex flex-row place-items-center font-bold hover:opacity-70'}
                     href={'/'}>
