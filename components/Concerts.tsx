@@ -8,9 +8,9 @@ const Concerts = () => {
     return (
             <div className="flex flex-col items-center">
 
-                <div className="w-[100svw] text-center">
-                    <h1 className={'text-white text-2xl'}>Предстоящие концерты:</h1>
-                </div>
+                {/*<div className="w-[100svw] text-center">*/}
+                {/*    <h1 className={'text-white text-2xl'}>Предстоящие концерты:</h1>*/}
+                {/*</div>*/}
                 {/*начало блока концерта*/}
                 <div className={'flex flex-col justify-center my-5 md:flex-row place-items-center'}>
                     <Image className={'w-1/2 aspect-square mx-2.5 md:w-1/3'} src={concert} alt={'concert'}/>

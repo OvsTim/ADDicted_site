@@ -8,8 +8,8 @@ import { ImBubble2 } from "react-icons/im";
 import { ImCalendar } from "react-icons/im";
 const Navbar = () => {
 
-    return (
-        <nav>
+    return (<div className="sticky top-0 bg-red-600 z-10">
+    <header>
              <div className={'bg-black m-auto h-full flex flex-col place-items-center md:flex-row md:place-content-between border-b-[1px] '}>
                  <Image
                      className={'w-10/12 p-[20px]  md:hidden'}
@@ -61,7 +61,8 @@ const Navbar = () => {
                 </Link>
                 <hr className={'w-full bg-white h-[1px]'}/>
             </div>
-        </nav>
+        </header>
+            </div>
     );
 };
 

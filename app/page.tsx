@@ -2,6 +2,7 @@ import Image from 'next/image'
 import bigImage from '@/public/image.jpg'
 import Gallery from "@/components/Gallery";
 import Concerts from "@/components/Concerts";
+import Album from "@/components/Album";
 export default function Home() {
 
   return (
@@ -11,6 +12,7 @@ export default function Home() {
               src={bigImage} alt={'title'}/>
           <Gallery/>
           <Concerts/>
+          <Album/>
       </main>
   )
 }
