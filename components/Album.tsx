@@ -24,7 +24,7 @@ const Album = () => {
         />
         <div
           className={
-            ' flex aspect-square w-1/3 flex-col justify-between md:justify-evenly '
+            ' flex aspect-square w-1/3 flex-col justify-center space-y-5 md:justify-evenly '
           }
         >
           <Link href={''}>
