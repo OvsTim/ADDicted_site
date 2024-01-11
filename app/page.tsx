@@ -21,20 +21,20 @@ export default function Home() {
         <div className={'relative w-full h-full m-auto'}>
             <main className='m-auto flex flex-col place-items-center bg-black'>
                 <Image
-                    className={' my-10 w-full lg:w-[1024px]'}
+                    className={' my-10 w-full lg:w-[1024px] opacity-90'}
                     src={bigImage}
                     alt={'title'}
                 />
                 <Gallery/>
-                <div id={'concerts'} className={' w-full h-[137px] md:h-[169px]'}/>
+                <div id={'concerts'} className={' w-full h-[137px] md:h-[189px]'}/>
                 <Concerts/>
-                <div id={'album'} className={' w-full h-[137px] md:h-[169px'}/>
+                <div id={'album'} className={' w-full h-[137px] md:h-[189px'}/>
                 <Album/>
-                <div id={'contacts'} className={' w-full h-[137px] md:h-[169px'}/>
+                <div id={'contacts'} className={' w-full h-[137px] md:h-[189px'}/>
                 <Contacts/>
                 <Footer/>
             </main>
-            <button className="fixed bottom-10 p-2.5 bg-gray-300 right-10 rounded-3xl md:invisible"
+            <button className="fixed bottom-20 p-2.5 bg-gray-300 right-10 rounded-3xl md:invisible"
                     onClick={scrollToTop}>
                 <FaArrowUp/>
             </button>
