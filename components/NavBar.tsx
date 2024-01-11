@@ -31,7 +31,7 @@ const Navbar = () => {
               className={
                 'flex flex-row place-items-center text-xl font-bold text-white hover:opacity-70'
               }
-              href={'/'}
+              href={'#concerts'}
             >
               <ImCalendar size={24} />
               <span className={'mx-2.5 text-2xl uppercase'}>Концерты</span>
@@ -40,7 +40,7 @@ const Navbar = () => {
               className={
                 'flex flex-row place-items-center text-xl font-bold text-white hover:opacity-70'
               }
-              href={'/'}
+              href={'#album'}
             >
               <ImMusic size={24} />
               <span className={'mx-2.5 text-2xl uppercase'}>Музыка</span>
@@ -65,7 +65,7 @@ const Navbar = () => {
             className={
               'flex flex-row place-items-center text-xl font-bold text-white hover:opacity-70'
             }
-            href={'/'}
+            href={'#concerts'}
           >
             <ImCalendar size={16} />
             <span className={'ml-2.5 uppercase'}>Концерты</span>
@@ -74,7 +74,7 @@ const Navbar = () => {
             className={
               'flex flex-row place-items-center text-xl font-bold text-white hover:opacity-70'
             }
-            href={'/'}
+            href={'#album'}
           >
             <ImMusic size={16} />
             <span className={'ml-2.5 uppercase'}>Музыка</span>
@@ -83,7 +83,7 @@ const Navbar = () => {
             className={
               'flex flex-row place-items-center text-xl font-bold text-white hover:opacity-70'
             }
-            href={'/'}
+            href={'#contacts'}
           >
             <ImBubble2 size={16} />
             <span className={'ml-2.5 uppercase'}>Контакты</span>

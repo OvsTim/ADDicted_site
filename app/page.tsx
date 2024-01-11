@@ -23,12 +23,15 @@ export default function Home() {
                   alt={'title'}
               />
               <Gallery/>
+              <div id={'concerts'} className={' w-full h-[137px] md:h-[169px]'}/>
               <Concerts/>
+              <div id={'album'} className={' w-full h-[137px] md:h-[169px'}/>
               <Album/>
+              <div id={'contacts'} className={' w-full h-[137px] md:h-[169px'}/>
 
 
           </main>
-          <button className="fixed bottom-10 p-5 bg-gray-300 right-10 rounded-3xl" onClick={scrollToTop}>
+          <button className="fixed bottom-10 p-2.5 bg-gray-300 right-10 rounded-3xl md:invisible" onClick={scrollToTop}>
               <FaArrowUp/>
           </button>
       </div>
