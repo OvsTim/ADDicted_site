@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import React from 'react';
-import Navbar from '@/components/NavBar';
 import logo_horizontal from '@/public/logo_horiziotal.png';
 import Image from 'next/image';
+import {Navbar} from "@/components/NavBar";
 
 const inter = Inter({ subsets: ['cyrillic'] });
 

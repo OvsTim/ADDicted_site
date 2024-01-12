@@ -1,12 +1,12 @@
 'use client';
 import Image from 'next/image';
 import bigImage from '@/public/image.jpg';
-import Gallery from '@/components/Gallery';
-import Concerts from '@/components/Concerts';
-import Album from '@/components/Album';
 import { FaArrowUp } from 'react-icons/fa';
-import Contacts from '@/components/Contacts';
-import Footer from '@/components/Footer';
+import {Gallery} from "@/components/Gallery";
+import {Concerts} from "@/components/Concerts";
+import {Album} from "@/components/Album";
+import {Contacts} from "@/components/Contacts";
+import {Footer} from "@/components/Footer";
 
 export default function Home() {
   const isBrowser = () => typeof window !== 'undefined'; //The approach recommended by Next.js

@@ -3,7 +3,7 @@ import { ImVk } from 'react-icons/im';
 import { ImYoutube } from 'react-icons/im';
 import { ImTelegram } from 'react-icons/im';
 import { ContactData } from '@/app/types';
-const Contacts = () => {
+export const Contacts = () => {
   const contacts: ContactData = {
     vk: 'https://vk.com/addicted.gang',
     youtube: 'https://www.youtube.com/@addicted8546',
@@ -81,5 +81,3 @@ const Contacts = () => {
     </div>
   );
 };
-
-export default Contacts;

@@ -6,7 +6,7 @@ import yandex from '@/public/music/yandex.png';
 import Link from 'next/link';
 import { AlbumData } from '@/app/types';
 
-const Album = () => {
+export const Album = () => {
   const albums: AlbumData[] = [
     {
       image: cover,
@@ -68,5 +68,3 @@ const Album = () => {
     </div>
   );
 };
-
-export default Album;

@@ -8,7 +8,7 @@ import image6 from '@/public/gallery/6.jpg';
 import image7 from '@/public/gallery/7.jpg';
 import image8 from '@/public/gallery/8.jpg';
 import Image from 'next/image';
-const Gallery = () => {
+export const Gallery = () => {
   return (
     <div className='container mx-auto px-5 py-2 pb-12'>
       <div className='-m-1 flex flex-wrap md:-m-2'>
@@ -88,4 +88,3 @@ const Gallery = () => {
     </div>
   );
 };
-export default Gallery;

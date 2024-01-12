@@ -5,7 +5,7 @@ import { ImLocation2 } from 'react-icons/im';
 import { ImVk } from 'react-icons/im';
 import Link from 'next/link';
 import { ConcertData } from '@/app/types';
-const Concerts = () => {
+export const Concerts = () => {
   const concerts: ConcertData[] = [
     {
       date: '23 марта (сб)',
@@ -84,5 +84,3 @@ const Concerts = () => {
     </div>
   );
 };
-
-export default Concerts;

@@ -2,12 +2,11 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import Image from 'next/image';
 import logo from '../public/logo_white.png';
-import logo_horizontal from '../public/logo_horiziotal.png';
 import { ImMusic } from 'react-icons/im';
 import { ImBubble2 } from 'react-icons/im';
 import { ImCalendar } from 'react-icons/im';
 
-const Navbar = () => {
+export const Navbar = () => {
   return (
     <div className='sticky top-0 z-10 '>
       <header>
@@ -95,5 +94,3 @@ const Navbar = () => {
     </div>
   );
 };
-
-export default Navbar;
