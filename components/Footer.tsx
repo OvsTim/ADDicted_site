@@ -1,18 +1,22 @@
-
-
 const Footer = () => {
-    return (
-        <div className={'bg-gray-600 flex flex-col place-items-center w-full m-auto h-1/5 p-3 text-white justify-center space-x-2 mt-20 md:flex-row'}>
-            <span className={'text-center'}>{'©2024 Любое наебалово преследуется по закону'}</span>
-            <a
-                className={'underline hover:text-gray-300'}
-                href={'https://ovstim.netlify.app/'}
-                target={'_blank'}
-                rel='noopener noreferrer'
-            >
-                Сайт разработчика
-            </a>
-        </div>
-    )
-}
-export default Footer
+  return (
+    <div
+      className={
+        'm-auto mt-20 flex h-1/5 w-full flex-col place-items-center justify-center space-x-2 bg-gray-600 p-3 text-white md:flex-row'
+      }
+    >
+      <span className={'text-center'}>
+        {'©2024 Любое наебалово преследуется по закону'}
+      </span>
+      <a
+        className={'underline hover:text-gray-300'}
+        href={'https://ovstim.netlify.app/'}
+        target={'_blank'}
+        rel='noopener noreferrer'
+      >
+        Сайт разработчика
+      </a>
+    </div>
+  );
+};
+export default Footer;
