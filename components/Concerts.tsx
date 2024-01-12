@@ -38,7 +38,7 @@ export const Concerts = () => {
           }
         >
           <Image
-            className={'mx-2.5 aspect-square w-1/2 md:w-1/3'}
+            className={'mx-2.5 aspect-square w-3/5 md:w-1/3'}
             src={concert.image}
             alt={'concert'}
           />

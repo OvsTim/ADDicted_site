@@ -48,6 +48,7 @@ export const Album = () => {
               }
             >
               <Link
+                  className={'transition duration-500 hover:scale-110'}
                 href={album.linkVk}
                 target={'_blank'}
                 rel='noopener noreferrer'
@@ -55,6 +56,7 @@ export const Album = () => {
                 <Image src={vk} alt={'vk'} />
               </Link>
               <Link
+                  className={'transition duration-500 hover:scale-110'}
                 href={album.linkYm}
                 target={'_blank'}
                 rel='noopener noreferrer'
