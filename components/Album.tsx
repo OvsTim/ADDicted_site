@@ -8,9 +8,9 @@ import Link from 'next/link';
 const Album = () => {
     return (
         <div className={'flex flex-col'}>
-            <div className={'relative mt-10 h-[70svh] w-full lg:w-[1300px]'}>
+            <div className={'relative mt-10 h-[70svh] w-full lg:w-[1024px]'}>
                 <Image
-                    className={'h-[70svh] w-full object-fill blur-lg lg:w-[1300px]'}
+                    className={'h-[70svh] w-full object-fill blur-lg lg:w-[1024px]'}
                     src={cover}
                     alt={'cover'}
                 />
@@ -44,9 +44,9 @@ const Album = () => {
             </div>
 
 
-            <div className={'relative mt-10 h-[70svh] w-full lg:w-[1300px]'}>
+            <div className={'relative mt-10 h-[70svh] w-full lg:w-[1024px]'}>
                 <Image
-                    className={'h-[70svh] w-full object-fill blur-lg lg:w-[1300px]'}
+                    className={'h-[70svh] w-full object-fill blur-lg lg:w-[1024px]'}
                     src={ya_uhoju}
                     alt={'cover'}
                 />
