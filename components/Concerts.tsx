@@ -34,13 +34,13 @@ export const Concerts = () => {
           }
         >
           <div className={'flex flex-col place-content-start md:flex-row place-items-center w-full md:space-x-2'}>
-            <h5 className='w-full text-2xl font-bold text-white md:w-1/2 text-left md:text-center '>
+            <h5 className='w-full text-xl font-bold text-white md:w-1/2 text-left md:text-center md:text-2xl'>
               {concert.date}
             </h5>
-            <h5 className='text-left underline w-full text-xl font-bold text-white md:w-1/3' >
+            <h5 className='text-left underline w-full font-bold text-white md:w-1/3 md:text-xl'>
               {concert.city}
             </h5>
-              <div className={'font-semibold text-left w-full text-white py-1.5 md:py-0 md:w-1/2 lg:text-center '}>{concert.location}</div>
+              <div className={'font-semibold text-left text-sm w-full text-white py-1.5 md:py-0 md:w-1/2 lg:text-center md:text-xl'}>{concert.location}</div>
           </div>
           <div className={'flex flex-row place-items-center my-5 md:my-0'}>
             <Link
