@@ -7,7 +7,6 @@ export interface AlbumData {
 }
 
 export interface ConcertData {
-  image: StaticImport;
   location: string;
   city: string;
   date: string;

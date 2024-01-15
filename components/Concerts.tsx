@@ -1,6 +1,4 @@
 import Image from 'next/image';
-import izh from '@/public/concert/c.jpg';
-import vrn from '@/public/concert/vrn.jpg';
 import { ImLocation2 } from 'react-icons/im';
 import { ImVk } from 'react-icons/im';
 import Link from 'next/link';
@@ -11,7 +9,6 @@ export const Concerts = () => {
       date: '23 марта (сб)',
       city: 'Ижевск',
       location: 'IZH_ROCK_CLUB /BARROCK/',
-      image: izh,
       vkLink: 'https://vk.com/addizh23',
       ticketsLink:
         'https://izhevsk.qtickets.events/96508-addicted-5-letie-gruppy-23-marta',
@@ -20,7 +17,6 @@ export const Concerts = () => {
       date: '30 марта (сб)',
       city: 'Воронеж',
       location: 'Сто ручьев',
-      image: vrn,
       vkLink: 'https://vk.com/addvrn23',
       ticketsLink:
         'https://voronezh.qtickets.events/97618-addicted-5-let-sto-ruchev',
@@ -28,44 +24,34 @@ export const Concerts = () => {
   ];
 
   return (
-    <div className='flex flex-col items-center'>
+    <div className='flex flex-col items-start m-auto lg:w-[1024px] w-full px-10 lg:px-0' >
       {/*начало блока концерта*/}
       {concerts.map((concert) => (
         <div
           key={concert.date}
           className={
-            'my-5 flex flex-col place-items-center justify-center md:flex-row'
+            'my-1 py-2 flex flex-col w-full border-b-2 md:flex-row lg:w-[1000px] lg:place-items-center lg:justify-between px-4'
           }
         >
-          <Image
-            className={'mx-2.5 aspect-square w-3/5 md:w-1/3'}
-            src={concert.image}
-            alt={'concert'}
-          />
-          <div className={'m-2.5 flex  w-1/2 flex-col space-y-5 md:w-1/4'}>
-            <h5 className='border-b-amber-100 text-center text-2xl font-bold text-white outline-4 md:text-left'>
+          <div className={'flex flex-col place-content-start md:flex-row place-items-center w-full md:space-x-2'}>
+            <h5 className='w-full text-2xl font-bold text-white md:w-1/2 text-left md:text-center '>
               {concert.date}
             </h5>
-            <h5 className='border-b-amber-100 text-center text-xl font-bold text-white outline-4 md:text-left'>
+            <h5 className='text-left underline w-full text-xl font-bold text-white md:w-1/3' >
               {concert.city}
             </h5>
-            <div
-              className={
-                'flex flex-row place-items-center space-x-1.5 text-center text-white md:text-left'
-              }
-            >
-              <ImLocation2 size={32} />
-              <div className={'font-semibold'}>{concert.location}</div>
-            </div>
+              <div className={'font-semibold text-left w-full text-white py-1.5 md:py-0 md:w-1/2 lg:text-center '}>{concert.location}</div>
+          </div>
+          <div className={'flex flex-row place-items-center my-5 md:my-0'}>
             <Link
               href={concert.vkLink}
               target={'_blank'}
               rel='noopener noreferrer'
               className={
-                'flex flex-row place-items-center justify-around border-2 border-white py-3 uppercase text-white hover:bg-white hover:text-black'
+                'w-1/2 flex flex-row place-items-center justify-around border-2 border-white py-3 px-5 uppercase text-white hover:bg-white hover:text-black mx-5'
               }
             >
-              <ImVk className={'absolute mr-32'} size={32} />
+              {/*<ImVk className={'absolute mr-24'} size={32} />*/}
               Встреча
             </Link>
             <Link
@@ -73,13 +59,13 @@ export const Concerts = () => {
               target={'_blank'}
               rel='noopener noreferrer'
               className={
-                'flex flex-row place-items-center justify-around border-2 border-white py-3 uppercase text-white hover:bg-white hover:text-black'
+                'w-1/2 flex flex-row place-items-center justify-around border-2 border-white py-3 px-5 uppercase text-white hover:bg-white hover:text-black'
               }
             >
               Билеты
             </Link>
           </div>
-        </div>
+          </div>
       ))}
     </div>
   );
