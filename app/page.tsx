@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import bigImage from '@/public/image.jpg';
+import bigImage from '@/public/image.webp';
 import { FaArrowUp } from 'react-icons/fa';
 import {Gallery} from "@/components/Gallery";
 import {Concerts} from "@/components/Concerts";
@@ -34,6 +34,7 @@ export default function Home() {
         <Footer />
       </main>
       <button
+          aria-label="go up"
         className='fixed bottom-20 right-10 rounded-3xl bg-gray-300 p-2.5 md:invisible'
         onClick={scrollToTop}
       >

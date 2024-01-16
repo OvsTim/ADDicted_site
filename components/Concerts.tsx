@@ -12,6 +12,7 @@ export const Concerts = () => {
       vkLink: 'https://vk.com/addizh23',
       ticketsLink:
         'https://izhevsk.qtickets.events/96508-addicted-5-letie-gruppy-23-marta',
+      slug:'izg_2024',
     },
     {
       date: '30 марта (сб)',
@@ -20,6 +21,7 @@ export const Concerts = () => {
       vkLink: 'https://vk.com/addvrn23',
       ticketsLink:
         'https://voronezh.qtickets.events/97618-addicted-5-let-sto-ruchev',
+      slug:'vrn_2024',
     },
   ];
 
@@ -44,6 +46,7 @@ export const Concerts = () => {
           </div>
           <div className={'flex flex-row place-items-center my-5 md:my-0'}>
             <Link
+              id={concert.slug+'_vkLink'}
               href={concert.vkLink}
               target={'_blank'}
               rel='noopener noreferrer'
@@ -55,6 +58,7 @@ export const Concerts = () => {
               Встреча
             </Link>
             <Link
+              id={concert.slug+'_ticketsLink'}
               href={concert.ticketsLink}
               target={'_blank'}
               rel='noopener noreferrer'

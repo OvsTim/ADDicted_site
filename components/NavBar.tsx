@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React, { useState } from 'react';
 import Image from 'next/image';
-import logo from '../public/logo_white.png';
+import logo from '../public/logo_white.webp';
 import { ImMusic } from 'react-icons/im';
 import { ImBubble2 } from 'react-icons/im';
 import { ImCalendar } from 'react-icons/im';
@@ -28,6 +28,7 @@ export const Navbar = () => {
             }
           >
             <Link
+              id='goConcerts'
               className={
                 'flex flex-row place-items-center text-xl font-bold text-white hover:opacity-70'
               }
@@ -37,6 +38,7 @@ export const Navbar = () => {
               <span className={'mx-2.5 text-2xl uppercase'}>Концерты</span>
             </Link>
             <Link
+              id='goAlbum'
               className={
                 'flex flex-row place-items-center text-xl font-bold text-white hover:opacity-70'
               }
@@ -46,6 +48,7 @@ export const Navbar = () => {
               <span className={'mx-2.5 text-2xl uppercase'}>Музыка</span>
             </Link>
             <Link
+              id={'contactsLink'}
               className={
                 'flex flex-row place-items-center text-xl font-bold text-white hover:opacity-70'
               }
@@ -62,6 +65,7 @@ export const Navbar = () => {
           }
         >
           <Link
+            id='concerts'
             className={
               'flex flex-row place-items-center text-xl font-bold text-white hover:opacity-70'
             }
@@ -71,6 +75,7 @@ export const Navbar = () => {
             <span className={'ml-2.5 uppercase'}>Концерты</span>
           </Link>
           <Link
+            id='goAlbums'
             className={
               'flex flex-row place-items-center text-xl font-bold text-white hover:opacity-70'
             }
@@ -80,6 +85,7 @@ export const Navbar = () => {
             <span className={'ml-2.5 uppercase'}>Музыка</span>
           </Link>
           <Link
+            id={'contactsLink'}
             className={
               'flex flex-row place-items-center text-xl font-bold text-white hover:opacity-70'
             }

@@ -23,14 +23,18 @@ export const Contacts = () => {
         }
       >
         <a
+          id={'vk'}
           className={'text-white hover:text-gray-300'}
           href={contacts.vk}
+          aria-label="vk link"
           target={'_blank'}
           rel='noopener noreferrer'
         >
           <ImVk size={56} />
         </a>
         <a
+          id={'telegram'}
+          aria-label="telegram link"
           className={'text-white hover:text-gray-300'}
           href={contacts.tg}
           target={'_blank'}
@@ -39,6 +43,8 @@ export const Contacts = () => {
           <ImTelegram size={56} />
         </a>
         <a
+          id={'youtube'}
+          aria-label="youtube link"
           className={'text-white hover:text-gray-300'}
           href={contacts.youtube}
           target={'_blank'}
@@ -58,6 +64,7 @@ export const Contacts = () => {
         }
       >
         <a
+          id={'contactPhone'}
           href={contacts.phoneLink}
           target={'_blank'}
           rel='noopener noreferrer'
@@ -68,6 +75,7 @@ export const Contacts = () => {
           <span className={'mx-7'}>Позвонить</span>
         </a>
         <a
+         id={'contactEmail'}
           href={contacts.emailLink}
           target={'_blank'}
           rel='noopener noreferrer'

@@ -4,6 +4,7 @@ export interface AlbumData {
   image: StaticImport;
   linkVk: string;
   linkYm: string;
+  slug:string;
 }
 
 export interface ConcertData {
@@ -12,6 +13,7 @@ export interface ConcertData {
   date: string;
   vkLink: string;
   ticketsLink: string;
+  slug:string;
 }
 
 export interface ContactData {
