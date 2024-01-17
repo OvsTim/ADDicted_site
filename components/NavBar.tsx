@@ -8,7 +8,7 @@ import { ImCalendar } from 'react-icons/im';
 
 export const Navbar = () => {
   return (
-    <div className='sticky top-0 z-10 '>
+    <div className='sticky top-0 z-50 '>
       <header>
         <div
           className={
@@ -65,7 +65,7 @@ export const Navbar = () => {
           }
         >
           <Link
-            id='concerts'
+            id='link_concerts'
             className={
               'flex flex-row place-items-center text-xl font-bold text-white hover:opacity-70'
             }
