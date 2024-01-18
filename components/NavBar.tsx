@@ -1,3 +1,4 @@
+'use client'
 import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
@@ -6,7 +7,16 @@ import { ImMusic } from 'react-icons/im';
 import { ImBubble2 } from 'react-icons/im';
 import { ImCalendar } from 'react-icons/im';
 
+
+
 export const Navbar = () => {
+  const isBrowser = () => typeof window !== 'undefined'; //The approach recommended by Next.js
+  function scrollToTop() {
+    if (!isBrowser()) return;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+
   return (
     <div className='sticky top-0 z-50 '>
       <header>
@@ -15,13 +25,17 @@ export const Navbar = () => {
             'm-auto flex h-full flex-col place-items-center border-b-[1px] bg-black md:flex-row md:place-content-between '
           }
         >
+          <button
+              id={'home'}
+              onClick={scrollToTop}>
           <Image
             className={
-              'm-2 hidden aspect-auto w-[100px] p-5 md:flex md:w-[100px] lg:w-[124px]'
+              'm-2 hidden aspect-auto w-[100px] p-5 md:flex md:w-[100px] lg:w-[124px] hover:scale-125 transition duration-500'
             }
             src={logo}
             alt={'logo'}
           />
+          </button>
           <div
             className={
               'hidden h-full w-2/3 place-content-evenly place-items-center py-10 md:flex'
