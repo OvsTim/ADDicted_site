@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import image0 from '@/public/image.webp';
 import image1 from '@/public/gallery/1.webp';

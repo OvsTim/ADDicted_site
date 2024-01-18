@@ -1,8 +1,5 @@
 'use client';
-import Image from 'next/image';
-import bigImage from '@/public/image.webp';
 import { FaArrowUp } from 'react-icons/fa';
-import {Gallery} from "@/components/Gallery";
 import {Concerts} from "@/components/Concerts";
 import {Album} from "@/components/Album";
 import {Contacts} from "@/components/Contacts";

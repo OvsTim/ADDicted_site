@@ -1,6 +1,3 @@
-import Image from 'next/image';
-import { ImLocation2 } from 'react-icons/im';
-import { ImVk } from 'react-icons/im';
 import Link from 'next/link';
 import { ConcertData } from '@/app/types';
 export const Concerts = () => {

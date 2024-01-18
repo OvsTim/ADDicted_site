@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import logo from '../public/logo_white.webp';
 import { ImMusic } from 'react-icons/im';

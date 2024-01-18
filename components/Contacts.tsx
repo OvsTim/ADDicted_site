@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { ImVk } from 'react-icons/im';
 import { ImYoutube } from 'react-icons/im';
 import { ImTelegram } from 'react-icons/im';
