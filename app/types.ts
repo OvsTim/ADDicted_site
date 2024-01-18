@@ -22,4 +22,5 @@ export interface ContactData {
   tg: string;
   emailLink: string;
   phoneLink: string;
+  raider:string;
 }

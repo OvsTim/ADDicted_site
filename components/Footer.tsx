@@ -6,7 +6,7 @@ export const Footer = () => {
       }
     >
       <span className={'text-center'}>
-        {'©2024 Любое наебалово преследуется по закону'}
+        {'©2024 Любое на***лово преследуется по закону'}
       </span>
       <a
         className={'underline hover:text-gray-300'}
