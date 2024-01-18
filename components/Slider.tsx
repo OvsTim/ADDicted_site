@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import image0 from '@/public/image.webp';

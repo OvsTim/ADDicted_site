@@ -1,19 +1,13 @@
-'use client';
-import { FaArrowUp } from 'react-icons/fa';
+
 import {Concerts} from "@/components/Concerts";
 import {Album} from "@/components/Album";
 import {Contacts} from "@/components/Contacts";
 import {Footer} from "@/components/Footer";
 import Link from "next/link";
 import {Slider} from "@/components/Slider";
+import {GoToTopButton} from "@/components/GoToTopButton";
 
 export default function Home() {
-  const isBrowser = () => typeof window !== 'undefined'; //The approach recommended by Next.js
-
-  function scrollToTop() {
-    if (!isBrowser()) return;
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
 
   return (
     <div className={'relative m-auto h-full w-full'}>
@@ -55,13 +49,7 @@ export default function Home() {
             <Contacts/>
             <Footer/>
         </main>
-        <button
-            aria-label="go up"
-            className='fixed bottom-20 right-10 rounded-3xl bg-gray-300 p-2.5 md:invisible z-50'
-            onClick={scrollToTop}
-        >
-            <FaArrowUp/>
-        </button>
+        <GoToTopButton/>
     </div>
   );
 }
