@@ -20,6 +20,38 @@ export const Concerts = () => {
         'https://voronezh.qtickets.events/97618-addicted-5-let-sto-ruchev',
       slug:'vrn_2024',
     },
+    {
+      date:'20 апреля (сб)',
+      city:'Нижний Новгород',
+      location:'Alcatraz',
+      vkLink:'https://vk.com/addnino24',
+      ticketsLink:'https://nnovgorod.qtickets.events/93421-addicted-5-let-nizhniy-novgorod',
+      slug:'nino_2024',
+    },
+    {
+      date:'27 апреля (сб)',
+      city:'Ярославль',
+      location:'Территория',
+      vkLink:'https://vk.com/addyar23',
+      ticketsLink:'https://yaroslavl.qtickets.events/97616-addicted-sellout-territoriya',
+      slug:'yar_2024',
+    },
+    {
+      date:'18 мая (сб)',
+      city:'Санкт-Петербург',
+      location:'Zoccolo 2.0',
+      vkLink:'https://vk.com/addspb24',
+      ticketsLink:'https://spb.qtickets.events/93127-addicted-5-let-sankt-peterburg',
+      slug:'spb_2024',
+    },
+    {
+      date:'25 мая (сб)',
+      city:'Москва',
+      location:'Город',
+      vkLink:'https://vk.com/addmsk',
+      ticketsLink:'https://moscow.qtickets.events/93120-addicted-5-let-moskva',
+      slug:'msk_2024',
+    }
   ];
 
   return (
