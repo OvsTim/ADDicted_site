@@ -8,7 +8,7 @@ export const Contacts = () => {
     youtube: 'https://www.youtube.com/@addicted8546',
     tg: 'https://t.me/addictedlive',
     emailLink: 'mailto:addictedpunkrock@gmail.com',
-    phoneLink: 'tel:+79201011711',
+    phoneLink: 'tel:+79011998291',
     raider:'https://docs.google.com/document/d/1jWVxVenyVeW3gWatBCjzndXiArzbm_3qGJqZtR9fdvk/edit?usp=sharing'
   };
 
