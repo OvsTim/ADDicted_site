@@ -46,7 +46,7 @@ export const Album = () => {
             />
             <div
               className={
-                ' flex aspect-square w-1/3 flex-col justify-center space-y-5 md:justify-evenly '
+                ' flex aspect-square w-1/2 flex-col justify-center space-y-5 md:justify-evenly md:w-1/3 '
               }
             >
               <Link

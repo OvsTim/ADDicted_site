@@ -61,14 +61,14 @@ export const Concerts = () => {
         <div
           key={concert.date}
           className={
-            'my-1 py-2 flex flex-col w-full border-b-2 md:flex-row lg:w-[1000px] lg:place-items-center lg:justify-between px-4'
+            'my-1 py-2 flex flex-col w-full border-b-2 border-[#515151] md:flex-row lg:w-[1000px] lg:place-items-center lg:justify-between px-4'
           }
         >
           <div className={'flex flex-col place-content-start md:flex-row place-items-center w-full md:space-x-2'}>
             <h5 className='w-full text-xl font-bold text-white md:w-1/2 text-left md:text-center md:text-2xl'>
               {concert.date}
             </h5>
-            <h5 className='text-left underline w-full font-bold text-white md:w-1/3 md:text-xl'>
+            <h5 className=' w-full text-2xl text-left font-bold text-white md:w-1/3 md:text-xl md:text-center'>
               {concert.city}
             </h5>
               <div className={'font-semibold text-left text-sm w-full text-white py-1.5 md:py-0 md:w-1/2 lg:text-center md:text-xl'}>{concert.location}</div>

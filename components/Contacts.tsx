@@ -54,7 +54,7 @@ export const Contacts = () => {
               </a>
           </div>
           <span
-              className={'text-center text-2xl font-semibold uppercase text-white'}
+              className={'text-center text-2xl font-semibold uppercase text-white mt-20'}
           >
         По вопросам организации концертов:
       </span>
@@ -92,7 +92,7 @@ export const Contacts = () => {
               target={'_blank'}
               rel='noopener noreferrer'
               className={
-                  ' w-1/3 px-10 flex flex-row place-items-center justify-around border-2 border-white py-3 uppercase text-white text-center hover:bg-white hover:text-black'
+                  'mt-20 w-1/3 px-10 flex flex-row place-items-center justify-around border-2 border-white py-3 uppercase text-white text-center hover:bg-white hover:text-black'
               }
           >
               <span className={'mx-7'}>Технический райдер группы</span>
