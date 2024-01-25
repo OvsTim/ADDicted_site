@@ -10,7 +10,7 @@ export const Footer = () => {
       </span>
       <a
         className={'underline hover:text-gray-300'}
-        href={'https://ovstim.netlify.app/'}
+        href={'https://ovstim.ru/'}
         target={'_blank'}
         rel='noopener noreferrer'
       >
