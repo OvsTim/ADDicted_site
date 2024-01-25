@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: 'ADDicted!',
   description: 'Сайт панк-рок группы ADDicted!',
   applicationName:'ADDicted!',
-  keywords:['Аддиктед','панк рок Рыбинск','ADDicted!','альтернативный панк рок'],
+  keywords:['Аддиктед','панк рок', 'Рыбинск','ADDicted!'],
 };
 
 export default function RootLayout({
