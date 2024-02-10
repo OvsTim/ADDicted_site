@@ -46,6 +46,14 @@ export const Concerts = () => {
       slug:'yar_2024',
     },
     {
+      date:'28 апреля (вс)',
+      city:'Владимир',
+      location:'Другой бар 2.0',
+      vkLink:'https://vk.com/selloutvld',
+      ticketsLink:'https://vk.cc/cuu8YV',
+      slug:'vlad_2024',
+    },
+    {
       date:'4 мая (сб)',
       city:'Киров',
       location:'Атмосфера',
