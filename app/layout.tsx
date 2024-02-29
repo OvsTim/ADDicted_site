@@ -13,6 +13,20 @@ export const metadata: Metadata = {
   description: 'Сайт панк-рок группы ADDicted!',
   applicationName:'ADDicted!',
   keywords:['Аддиктед','панк рок', 'Рыбинск','ADDicted!'],
+  icons: {
+    icon: [
+      {
+        media: '(prefers-color-scheme: light)',
+        url: '/light_icon.png',
+        href: '/light_icon.png',
+      },
+      {
+        media: '(prefers-color-scheme: dark)',
+        url: '/dark_icon.png',
+        href: '/dark_icon.png',
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
