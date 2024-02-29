@@ -23,4 +23,5 @@ export interface ContactData {
   emailLink: string;
   phoneLink: string;
   raider:string;
+  bytRaider:string;
 }

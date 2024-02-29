@@ -9,7 +9,8 @@ export const Contacts = () => {
     tg: 'https://t.me/addictedlive',
     emailLink: 'mailto:addictedpunkrock@gmail.com',
     phoneLink: 'tel:+79011998291',
-    raider:'https://docs.google.com/document/d/1jWVxVenyVeW3gWatBCjzndXiArzbm_3qGJqZtR9fdvk/edit?usp=sharing'
+    raider:'https://docs.google.com/document/d/1jWVxVenyVeW3gWatBCjzndXiArzbm_3qGJqZtR9fdvk/edit?usp=sharing',
+    bytRaider:'https://docs.google.com/document/d/1bDjI9jHifUF8NpN-SlWZxlaoqrhDrxy0lF9HDxt3kj4/edit?usp=sharing'
   };
 
   return (
@@ -92,10 +93,21 @@ export const Contacts = () => {
               target={'_blank'}
               rel='noopener noreferrer'
               className={
-                  'mt-20 w-1/3 px-10 flex flex-row place-items-center justify-around border-2 border-white py-3 uppercase text-white text-center hover:bg-white hover:text-black'
+                  'mt-20 w-1/3 px-10 flex flex-row place-items-center justify-around border-2 border-white py-3 uppercase text-white text-center hover:bg-white hover:text-black md:w-1/4'
               }
           >
-              <span className={'mx-7'}>Технический райдер группы</span>
+              <span className={'mx-7 my-1'}>Технический райдер</span>
+          </a>
+          <a
+              id={'bytRaider'}
+              href={contacts.bytRaider}
+              target={'_blank'}
+              rel='noopener noreferrer'
+              className={
+                  'mt-20 w-1/3 px-10 flex flex-row place-items-center justify-around border-2 border-white py-3 uppercase text-white text-center hover:bg-white hover:text-black md:w-1/4'
+              }
+          >
+              <span className={'mx-7 my-1'}>Бытовой райдер</span>
           </a>
       </div>
   );

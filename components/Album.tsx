@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import cover from '@/public/album/rave.webp';
 import chdt from '@/public/album/chdtwebp.webp';
-import ya_uhoju from '@/public/album/ya_uhoju.webp';
+import den from '@/public/album/den.webp';
 import vk from '@/public/music/vk.png';
 import yandex from '@/public/music/yandex.png';
 import Link from 'next/link';
@@ -10,23 +10,18 @@ import { AlbumData } from '@/app/types';
 export const Album = () => {
   const albums: AlbumData[] = [
     {
+      image: den,
+      linkVk: 'https://music.vk.com/link/cPX2C',
+      linkYm: 'https://music.yandex.ru/album/29853220',
+      slug:'den',
+    },
+    {
       image: chdt,
       linkVk: 'https://music.vk.com/link/ZsLJM',
       linkYm: 'https://music.yandex.ru/album/29207763',
       slug:'chdt',
     },
-    {
-      image: cover,
-      linkVk: 'https://vk.com/music/album/-2000255675_18255675',
-      linkYm: 'https://music.yandex.ru/album/26293603',
-      slug:'rave',
-    },
-    // {
-    //   image: ya_uhoju,
-    //   linkVk: 'https://vk.com/audio-2001514347_119514347',
-    //   linkYm: 'https://music.yandex.ru/album/25491119',
-    //   slug:'ya_uhogu'
-    // },
+
   ];
 
   return (
