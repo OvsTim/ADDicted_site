@@ -6,6 +6,8 @@ import {Footer} from "@/components/Footer";
 import Link from "next/link";
 import {Slider} from "@/components/Slider";
 import {GoToTopButton} from "@/components/GoToTopButton";
+import Image from "next/image";
+import chartova from '@/public/chart.webp'
 
 export default function Home() {
 
@@ -13,36 +15,51 @@ export default function Home() {
     <div className={'relative m-auto h-full w-full'}>
         <main className='m-auto flex flex-col place-items-center bg-black'>
             <div className="h-full w-[100%] relative lg:w-[1024px] py-5">
-                <Slider/>
-                <div className="z-40 absolute bottom-0 px-4 py-3 w-full h-full space-y-5 place-items-center md:place-items-start justify-center flex flex-col lg:w-[1024px] md:space-y-20">
-                    <span className="text-white font-bold text-3xl mx-2.5 my-2.5 md:text-4xl break-words">{"Новый альбом/тур " +
-                        "2024"}</span>
-                    <div className={'flex flex-col space-y-5 space-x-0 place-items-center w-full md:w-1/2 md:flex-row justify-center h-fit md:space-y-0 md:space-x-5'}>
-                        <Link
-                            id={'listenAlbum'}
-                            href={'#album'}
-                            className={
-                                'bg-gray-500/50 w-2/3 flex flex-row place-items-center justify-around border-2 border-white py-3 px-5 uppercase text-white hover:bg-white hover:text-black md:w-full md:text-xl'
-                            }
-                        >
-                            Послушать
-                        </Link>
-                        <Link
-                            id={'buyTickets'}
-                            href={'#concerts'}
-                            className={
-                                'bg-gray-500/50 w-2/3 flex flex-row place-items-center justify-around border-2 border-white py-3 px-5 uppercase text-white hover:bg-white hover:text-black md:w-full md:text-xl'
-                            }
-                        >
-                            Увидеть
-                        </Link>
-                    </div>
-                </div>
+                {/*<Slider/>*/}
+                {/*<div className="z-40 absolute bottom-0 px-4 py-3 w-full h-full space-y-5 place-items-center md:place-items-start justify-center flex flex-col lg:w-[1024px] md:space-y-20">*/}
+                {/*    <span className="text-white font-bold text-3xl mx-2.5 my-2.5 md:text-4xl break-words">{"Новый альбом/тур " +*/}
+                {/*        "2024"}</span>*/}
+                {/*    <div className={'flex flex-col space-y-5 space-x-0 place-items-center w-full md:w-1/2 md:flex-row justify-center h-fit md:space-y-0 md:space-x-5'}>*/}
+                {/*        <Link*/}
+                {/*            id={'listenAlbum'}*/}
+                {/*            href={'#album'}*/}
+                {/*            className={*/}
+                {/*                'bg-gray-500/50 w-2/3 flex flex-row place-items-center justify-around border-2 border-white py-3 px-5 uppercase text-white hover:bg-white hover:text-black md:w-full md:text-xl'*/}
+                {/*            }*/}
+                {/*        >*/}
+                {/*            Послушать*/}
+                {/*        </Link>*/}
+                {/*        <Link*/}
+                {/*            id={'buyTickets'}*/}
+                {/*            href={'#concerts'}*/}
+                {/*            className={*/}
+                {/*                'bg-gray-500/50 w-2/3 flex flex-row place-items-center justify-around border-2 border-white py-3 px-5 uppercase text-white hover:bg-white hover:text-black md:w-full md:text-xl'*/}
+                {/*            }*/}
+                {/*        >*/}
+                {/*            Увидеть*/}
+                {/*        </Link>*/}
+                {/*    </div>*/}
+                {/*</div>*/}
+
             </div>
+            <h1 className={'mv-5 text-white font-bold text-2xl lg:w-[700px] w-3/4 text-center md:text-3xl'}>
+                {"Голосуй за нас в \"Чартовой дюжине\" каждый день!"}</h1>
+            <Image className={'lg:w-[700px] w-3/4 mt-10'} src={chartova} alt={'chartova'}/>
+            <a
+                id={'contactRaider'}
+                href={'https://www.nashe.ru/chartova'}
+                target={'_blank'}
+                rel='noopener noreferrer'
+                className={
+                    'mt-10 w-1/2 px-10 flex flex-row place-items-center justify-around border-2 border-white py-3 uppercase text-white text-center hover:bg-white hover:text-black'
+                }
+            >
+                <span className={'mx-7 my-1'}>Проголосовать</span>
+            </a>
             {/*<Gallery/>*/}
             <div
                 id={'concerts'}
-                 className={'h-[137px] w-full md:h-[189px]'}/>
+                className={'h-[137px] w-full md:h-[189px]'}/>
             <Concerts/>
             <div id={'album'} className={' md:h-[189px] h-[137px] w-full'}/>
             <Album/>
