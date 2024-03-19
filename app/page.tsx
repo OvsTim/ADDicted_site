@@ -7,7 +7,7 @@ import Link from "next/link";
 import {Slider} from "@/components/Slider";
 import {GoToTopButton} from "@/components/GoToTopButton";
 import Image from "next/image";
-import chartova from '@/public/chart.webp'
+import chartova from '@/public/chart_13.webp'
 
 export default function Home() {
 
