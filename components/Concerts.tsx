@@ -3,38 +3,6 @@ import { ConcertData } from '@/app/types';
 export const Concerts = () => {
   const concerts: ConcertData[] = [
     {
-      date:'20 апреля (сб)',
-      city:'Нижний Новгород',
-      location:'Alcatraz',
-      vkLink:'https://vk.com/addnino24',
-      ticketsLink:'https://nnovgorod.qtickets.events/93421-addicted-5-let-nizhniy-novgorod',
-      slug:'nino_2024',
-    },
-    {
-      date:'27 апреля (сб)',
-      city:'Ярославль',
-      location:'Территория',
-      vkLink:'https://vk.com/addyar23',
-      ticketsLink:'https://yaroslavl.qtickets.events/97616-addicted-sellout-territoriya',
-      slug:'yar_2024',
-    },
-    {
-      date:'28 апреля (вс)',
-      city:'Владимир',
-      location:'Другой бар 2.0',
-      vkLink:'https://vk.com/selloutvld',
-      ticketsLink:'https://vk.cc/cuu8YV',
-      slug:'vlad_2024',
-    },
-    {
-      date:'4 мая (сб)',
-      city:'Киров',
-      location:'Атмосфера',
-      vkLink:'https://vk.com/addkirov24',
-      ticketsLink:'https://kirov.qtickets.events/102039-addicted-5-letie-gruppy-4-maya',
-      slug:'kir_2024',
-    },
-    {
       date:'18 мая (сб)',
       city:'Санкт-Петербург',
       location:'Zoccolo 2.0',
@@ -49,8 +17,55 @@ export const Concerts = () => {
       vkLink:'https://vk.com/addmsk',
       ticketsLink:'https://moscow.qtickets.events/93120-addicted-5-let-moskva',
       slug:'msk_2024',
-    }
+    },
+    {
+      date:'15 июня (сб)',
+      city:'BLACK 7 RUSSIAN RUN',
+      location:'Ивановская область, Тейковский район, курортный отель "Чайка"',
+      vkLink:'https://vk.com/black7run',
+      slug:'b7r_2022',
+    },
+    {
+      date:'22 июня (сб)',
+      city:'ANTI-PARTY!',
+      location:'Калужская область, деревня Тайдашево, база отдыха "Головинка"',
+      vkLink:'https://vk.com/antiparty24',
+      ticketsLink:'https://moscow.qtickets.events/88219-anti-party-2024',
+      slug:'anti_2024',
+    },
+    {
+      date:'6 июля (сб)',
+      city:'29 FEST',
+      location:'Архангельск, загородный клуб «Кантри Клаб», Заостровье',
+      vkLink:'https://vk.com/29fest',
+      ticketsLink:'https://afisha29.intickets.ru/seance/14894641/',
+      slug:'arch_2022',
+    },
+    {
+      date:'11-13 июля',
+      city:'УЛЕТАЙ',
+      location:'с. Лагуново, Сарапульский район, Удмуртия',
+      vkLink:'https://vk.com/uletayfest',
+      ticketsLink:'https://drivegrup.ru/ticket/drive',
+      slug:'msk_2022',
+    },
+    // {
+    //   date:'17 августа (сб)',
+    //   city:'Ковчег',
+    //   location:'с Еремейцево',
+    //   vkLink:'https://vk.com/addmsk',
+    //   // ticketsLink:'https://moscow.qtickets.events/93120-addicted-5-let-moskva',
+    //   slug:'msk_2022',
+    // }
   ];
+/*
+1. 14-16 июня. Байк фест Иваново (15го сет)
+2. 21-23 июня. Антипати. (22го сет)
+3. 4-7 июля. Доброфест
+4. 6 июля. Архангельск
+5. 11-14 июля. Улетай
+6. Август. Ковчег
+* */
 
   return (
     <div className='flex flex-col items-start m-auto lg:w-[1024px] w-full px-10 lg:px-0' >
@@ -71,32 +86,51 @@ export const Concerts = () => {
             </h5>
               <div className={'font-semibold text-left text-sm w-full text-white py-1.5 md:py-0 md:w-1/2 lg:text-center md:text-xl'}>{concert.location}</div>
           </div>
-          <div className={'flex flex-row place-items-center my-5 md:my-0'}>
-            <Link
-              id={concert.slug+'_vkLink'}
-              href={concert.vkLink}
-              target={'_blank'}
-              rel='noopener noreferrer'
-              className={
-                'w-1/2 flex flex-row place-items-center justify-around border-2 border-white py-3 px-5 uppercase text-white hover:bg-white hover:text-black mx-5'
-              }
-            >
-              {/*<ImVk className={'absolute mr-24'} size={32} />*/}
-              Встреча
-            </Link>
-            <Link
-              id={concert.slug+'_ticketsLink'}
-              href={concert.ticketsLink}
-              target={'_blank'}
-              rel='noopener noreferrer'
-              className={
-                'w-1/2 flex flex-row place-items-center justify-around border-2 border-white py-3 px-5 uppercase text-white hover:bg-white hover:text-black'
-              }
-            >
-              Билеты
-            </Link>
-          </div>
-          </div>
+          {concert.ticketsLink?
+              (
+                  <div className={'flex flex-row place-items-center my-5 md:my-0'}>
+                    <Link
+                        id={concert.slug+'_vkLink'}
+                        href={concert.vkLink}
+                        target={'_blank'}
+                        rel='noopener noreferrer'
+                        className={
+                          'w-1/2 flex flex-row place-items-center justify-around border-2 border-white py-3 px-5 uppercase text-white hover:bg-white hover:text-black mx-5'
+                        }
+                    >
+                      Встреча
+                    </Link>
+                    {concert.ticketsLink && <Link
+                        id={concert.slug+'_ticketsLink'}
+                        href={concert.ticketsLink}
+                        target={'_blank'}
+                        rel='noopener noreferrer'
+                        className={
+                          'w-1/2 flex flex-row place-items-center justify-around border-2 border-white py-3 px-5 uppercase text-white hover:bg-white hover:text-black'
+                        }
+                    >
+                      Билеты
+                    </Link>}
+                  </div>
+              )
+                  :
+              (
+                  <div className={'flex place-items-center my-5 md:my-0 w-full lg:w-[40%] md:w-[410px]'}>
+                    <Link
+                        id={concert.slug + '_vkLink'}
+                        href={concert.vkLink}
+                        target={'_blank'}
+                        rel='noopener noreferrer'
+                        className={
+                          'w-full flex place-items-center justify-around border-2 border-white py-3 px-5 uppercase text-white hover:bg-white hover:text-black ml-6'
+                        }
+                    >
+                      Встреча
+                    </Link>
+                  </div>
+              )
+          }
+        </div>
       ))}
     </div>
   );

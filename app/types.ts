@@ -12,7 +12,7 @@ export interface ConcertData {
   city: string;
   date: string;
   vkLink: string;
-  ticketsLink: string;
+  ticketsLink?: string;
   slug:string;
 }
 
