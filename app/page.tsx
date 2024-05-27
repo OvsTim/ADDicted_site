@@ -17,7 +17,7 @@ export default function Home() {
             <div className="h-full w-[100%] relative lg:w-[1024px] py-5">
                 <Slider/>
                 <div className="z-40 absolute bottom-0 px-4 py-3 w-full h-full space-y-5 place-items-center md:place-items-start justify-center flex flex-col lg:w-[1024px] md:space-y-20">
-                    <span className="text-white font-bold text-3xl mx-2.5 my-2.5 md:text-4xl break-words">{"Новый альбом/тур " +
+                    <span className="text-white font-bold text-3xl mx-2.5 my-2.5 md:text-4xl break-words">{"Новый альбом/летние фестивали " +
                         "2024"}</span>
                     <div className={'flex flex-col space-y-5 space-x-0 place-items-center w-full md:w-1/2 md:flex-row justify-center h-fit md:space-y-0 md:space-x-5'}>
                         <Link
