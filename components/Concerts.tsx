@@ -33,14 +33,14 @@ export const Concerts = () => {
       ticketsLink:'https://drivegrup.ru/ticket/drive',
       slug:'msk_2022',
     },
-    // {
-    //   date:'17 августа (сб)',
-    //   city:'Ковчег',
-    //   location:'с Еремейцево',
-    //   vkLink:'https://vk.com/addmsk',
-    //   // ticketsLink:'https://moscow.qtickets.events/93120-addicted-5-let-moskva',
-    //   slug:'msk_2022',
-    // }
+    {
+      date:'16-18 августа',
+      city:'Ковчег',
+      location:'с Еремейцево, Ярославская область',
+      vkLink:'https://vk.com/nebofest76',
+      // ticketsLink:'https://moscow.qtickets.events/93120-addicted-5-let-moskva',
+      slug:'kovcheg',
+    }
   ];
 /*
 1. 14-16 июня. Байк фест Иваново (15го сет)
