@@ -34,7 +34,7 @@ export const Concerts = () => {
       slug:'msk_2022',
     },
     {
-      date:'16-18 августа',
+      date:'17 августа',
       city:'Ковчег',
       location:'с Еремейцево, Ярославская область',
       vkLink:'https://vk.com/nebofest76',
@@ -42,14 +42,7 @@ export const Concerts = () => {
       slug:'kovcheg',
     }
   ];
-/*
-1. 14-16 июня. Байк фест Иваново (15го сет)
-2. 21-23 июня. Антипати. (22го сет)
-3. 4-7 июля. Доброфест
-4. 6 июля. Архангельск
-5. 11-14 июля. Улетай
-6. Август. Ковчег
-* */
+
 
   return (
     <div className='flex flex-col items-start m-auto lg:w-[1024px] w-full px-10 lg:px-0' >
