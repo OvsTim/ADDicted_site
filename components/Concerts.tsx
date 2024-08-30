@@ -3,53 +3,39 @@ import { ConcertData } from '@/app/types';
 export const Concerts = () => {
   const concerts: ConcertData[] = [
     {
-      date:'15 июня (сб)',
-      city:'BLACK 7 RUSSIAN RUN',
-      location:'Ивановская область, Тейковский район, курортный отель "Чайка"',
-      vkLink:'https://vk.com/black7run',
-      slug:'b7r_2022',
+      date:'23 ноября (сб)',
+      city:'Рыбинск',
+      location:'Арт-клуб "Перекресток"',
+      vkLink:'https://vk.com/addryb24',
+      ticketsLink:'https://rybinsk.qtickets.events/127765-2311-addicted-perekrestok',
+      slug:'addryb24',
     },
     {
-      date:'22 июня (сб)',
-      city:'ANTI-PARTY!',
-      location:'Калужская область, деревня Тайдашево, база отдыха "Головинка"',
-      vkLink:'https://vk.com/antiparty24',
-      ticketsLink:'https://moscow.qtickets.events/88219-anti-party-2024',
-      slug:'anti_2024',
+      date:'30 ноября (сб)',
+      city:'Санкт-Петербург',
+      location:'The Place',
+      vkLink:'https://vk.com/addicted_spb24',
+      ticketsLink:'https://vk.com/app52224262_-227116466',
+      slug:'addicted_spb24',
     },
     {
-      date:'6 июля (сб)',
-      city:'29 FEST',
-      location:'Архангельск, загородный клуб «Кантри Клаб», Заостровье',
-      vkLink:'https://vk.com/29fest',
-      ticketsLink:'https://afisha29.intickets.ru/seance/14894641/',
-      slug:'arch_2022',
+      date:'7 декабря (сб)',
+      city:'Москва',
+      location:'Live Stars',
+      vkLink:'https://vk.com/addicted_msk24',
+      ticketsLink:'https://vk.com/app52224294_-227116182',
+      slug:'addicted_msk24',
     },
     {
-      date:'11-13 июля',
-      city:'УЛЕТАЙ',
-      location:'с. Лагуново, Сарапульский район, Удмуртия',
-      vkLink:'https://vk.com/uletayfest',
-      ticketsLink:'https://drivegrup.ru/ticket/drive',
-      slug:'msk_2022',
+      date:'14 декабря (сб)',
+      city:'Архангельск',
+      location:'Фабрика',
+      vkLink:'https://vk.com/addicted_arh24',
+      ticketsLink:'https://arhangelsk.qtickets.events/127732-addicted-bolshoy-solnyy-kontsert-v-fabrike',
+      slug:'addicted_arh24',
     },
-    {
-      date:'16-18 августа',
-      city:'Ковчег',
-      location:'с Еремейцево, Ярославская область',
-      vkLink:'https://vk.com/nebofest76',
-      // ticketsLink:'https://moscow.qtickets.events/93120-addicted-5-let-moskva',
-      slug:'kovcheg',
-    }
   ];
-/*
-1. 14-16 июня. Байк фест Иваново (15го сет)
-2. 21-23 июня. Антипати. (22го сет)
-3. 4-7 июля. Доброфест
-4. 6 июля. Архангельск
-5. 11-14 июля. Улетай
-6. Август. Ковчег
-* */
+
 
   return (
     <div className='flex flex-col items-start m-auto lg:w-[1024px] w-full px-10 lg:px-0' >
