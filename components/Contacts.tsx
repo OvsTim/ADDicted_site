@@ -7,8 +7,8 @@ export const Contacts = () => {
     vk: 'https://vk.com/addicted.gang',
     youtube: 'https://www.youtube.com/@addicted8546',
     tg: 'https://t.me/addictedlive',
-    emailLink: 'mailto:addictedpunkrock@gmail.com',
-    phoneLink: 'tel:+79011998291',
+    emailLink: 'mailto:rainembrace@mail.ru',
+    phoneLink: 'tel:+79119798814',
     raider:'https://docs.google.com/document/d/1jWVxVenyVeW3gWatBCjzndXiArzbm_3qGJqZtR9fdvk/edit?usp=sharing',
     bytRaider:'https://docs.google.com/document/d/1bDjI9jHifUF8NpN-SlWZxlaoqrhDrxy0lF9HDxt3kj4/edit?usp=sharing'
   };
