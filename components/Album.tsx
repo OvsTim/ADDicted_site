@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import cover from '@/public/album/rave.webp';
-import chdt from '@/public/album/chdtwebp.webp';
+
 import den from '@/public/album/den.webp';
+import rm from '@/public/album/RM.webp';
 import vk from '@/public/music/vk.png';
 import yandex from '@/public/music/yandex.png';
 import Link from 'next/link';
@@ -10,16 +10,16 @@ import { AlbumData } from '@/app/types';
 export const Album = () => {
   const albums: AlbumData[] = [
     {
+      image:rm,
+      linkVk:'https://music.vk.com/link/x1Zfd',
+      linkYm:'https://music.yandex.ru/album/33526307',
+      slug:'rm',
+    },
+    {
       image: den,
       linkVk: 'https://music.vk.com/link/cPX2C',
       linkYm: 'https://music.yandex.ru/album/29853220',
       slug:'den',
-    },
-    {
-      image: chdt,
-      linkVk: 'https://music.vk.com/link/ZsLJM',
-      linkYm: 'https://music.yandex.ru/album/29207763',
-      slug:'chdt',
     },
 
   ];
