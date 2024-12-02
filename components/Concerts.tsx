@@ -3,30 +3,6 @@ import { ConcertData } from '@/app/types';
 export const Concerts = () => {
   const concerts: ConcertData[] = [
     {
-      date:'22 ноября (пт)',
-      city:'Иваново',
-      location:'Al ROCK',
-      vkLink:'https://vk.com/event227522775',
-      ticketsLink:'https://ivanovo.qtickets.events/131261-2211-addicted-al-rock',
-      slug:'addiv24',
-    },
-    {
-      date:'23 ноября (сб)',
-      city:'Рыбинск',
-      location:'Арт-клуб "Перекресток"',
-      vkLink:'https://vk.com/addryb24',
-      ticketsLink:'https://rybinsk.qtickets.events/127765-2311-addicted-perekrestok',
-      slug:'addryb24',
-    },
-    {
-      date:'30 ноября (сб)',
-      city:'Санкт-Петербург',
-      location:'The Place',
-      vkLink:'https://vk.com/addicted_spb24',
-      ticketsLink:'https://vk.com/app52224262_-227116466',
-      slug:'addicted_spb24',
-    },
-    {
       date:'7 декабря (сб)',
       city:'Москва',
       location:'Live Stars',
