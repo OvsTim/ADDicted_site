@@ -93,7 +93,7 @@ export const Contacts = () => {
               target={'_blank'}
               rel='noopener noreferrer'
               className={
-                  'mt-20 w-1/3 px-10 flex flex-row place-items-center justify-around border-2 border-white py-3 uppercase text-white text-center hover:bg-white hover:text-black md:w-1/4'
+                  'mt-20 w-1/2 px-10 flex flex-row place-items-center justify-center border-2 border-white py-3 uppercase text-white text-center hover:bg-white hover:text-black md:w-1/4'
               }
           >
               <span className={'mx-7 my-1'}>Технический райдер</span>
@@ -104,7 +104,7 @@ export const Contacts = () => {
               target={'_blank'}
               rel='noopener noreferrer'
               className={
-                  'mt-20 w-1/3 px-10 flex flex-row place-items-center justify-around border-2 border-white py-3 uppercase text-white text-center hover:bg-white hover:text-black md:w-1/4'
+                  'mt-20 w-1/2 px-10 flex flex-row place-items-center justify-center border-2 border-white py-3 uppercase text-white text-center hover:bg-white hover:text-black md:w-1/4'
               }
           >
               <span className={'mx-7 my-1'}>Бытовой райдер</span>
