@@ -3,17 +3,17 @@ import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
 import logo from '../public/logo_white.webp';
-import { ImMusic } from 'react-icons/im';
+import {ImGift, ImMusic} from 'react-icons/im';
 import { ImBubble2 } from 'react-icons/im';
 import { ImCalendar } from 'react-icons/im';
-
+import { AiOutlineShopping } from "react-icons/ai";
 
 
 export const Navbar = () => {
   const isBrowser = () => typeof window !== 'undefined'; //The approach recommended by Next.js
   function scrollToTop() {
     if (!isBrowser()) return;
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: 'auto' });
   }
 
 
@@ -41,6 +41,18 @@ export const Navbar = () => {
               'hidden h-full w-2/3 place-content-evenly place-items-center py-10 md:flex'
             }
           >
+            <Link
+                id='goMerch'
+                className={
+                  'flex flex-row place-items-center text-xl font-bold text-white hover:opacity-70'
+                }
+                href={'https://vk.com/market-173586614'}
+                target={'_blank'}
+                rel='noopener noreferrer'
+            >
+              <AiOutlineShopping size={32} />
+              <span className={'mx-2.5 text-2xl uppercase'}>Мерч</span>
+            </Link>
             <Link
               id='goConcerts'
               className={
@@ -78,6 +90,18 @@ export const Navbar = () => {
             'mb-5 flex w-full flex-col place-content-evenly place-items-center space-y-7 bg-black pt-5 md:hidden'
           }
         >
+          <Link
+              id='link_merch'
+              className={
+                'flex flex-row place-items-center text-xl font-bold text-white hover:opacity-70'
+              }
+              href={'https://vk.com/market-173586614'}
+              target={'_blank'}
+              rel='noopener noreferrer'
+          >
+            <AiOutlineShopping size={24} />
+            <span className={'ml-2.5 uppercase'}>Мерч</span>
+          </Link>
           <Link
             id='link_concerts'
             className={

@@ -3,14 +3,6 @@ import { ConcertData } from '@/app/types';
 export const Concerts = () => {
   const concerts: ConcertData[] = [
     {
-      date:'7 декабря (сб)',
-      city:'Москва',
-      location:'Live Stars',
-      vkLink:'https://vk.com/addicted_msk24',
-      ticketsLink:'https://vk.com/app52224294_-227116182',
-      slug:'addicted_msk24',
-    },
-    {
       date:'14 декабря (сб)',
       city:'Архангельск',
       location:'Фабрика',
