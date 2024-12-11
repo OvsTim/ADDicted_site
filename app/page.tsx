@@ -42,9 +42,9 @@ export default function Home() {
           {/*</div>*/}
           <iframe
             className={'aspect-video h-[50%] w-full  lg:w-[1024px]'}
-            src='https://vk.com/video_ext.php?oid=-2000037007&id=133037007&hd=3&hash=e19608a4e5ad0464'
-            width='1280'
-            height='720'
+            src='https://vk.com/video_ext.php?oid=-2000037007&id=133037007&hd=4&hash=e19608a4e5ad0464&autoplay=1'
+            width='1920'
+            height='1080'
             allow='autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;'
             allowFullScreen
           ></iframe>
