@@ -3,18 +3,24 @@ import { ConcertData } from '@/app/types';
 export const Concerts = () => {
   const concerts: ConcertData[] = [
     {
-      date:'14 декабря (сб)',
-      city:'Архангельск',
-      location:'Фабрика',
-      vkLink:'https://vk.com/addicted_arh24',
-      ticketsLink:'https://arhangelsk.qtickets.events/127732-addicted-bolshoy-solnyy-kontsert-v-fabrike',
-      slug:'addicted_arh24',
+      date:'11 января (сб)',
+      city:'Москва',
+      location:'Зимний Фестиваль "ANTI-PARTY!"',
+      vkLink:'https://vk.com/winterantiparty2025',
+      ticketsLink:'https://moscow.qtickets.events/135366-zimniy-festival-anti-party-2025',
+      slug:'addicted_antpt',
     },
   ];
 
 
   return (
     <div className='flex flex-col items-start m-auto lg:w-[1024px] w-full px-10 lg:px-0' >
+      {concerts.length === 0 &&
+      <h3 className={'text-white text-2xl content-center w-full text-center py-20 md:text-4xl'}>
+        Концерты завершены. Новые даты скоро!
+      </h3>
+
+      }
       {/*начало блока концерта*/}
       {concerts.map((concert) => (
         <div
