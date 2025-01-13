@@ -2,14 +2,14 @@ import Link from 'next/link';
 import { ConcertData } from '@/app/types';
 export const Concerts = () => {
   const concerts: ConcertData[] = [
-    {
-      date:'11 января (сб)',
-      city:'Москва',
-      location:'Зимний Фестиваль "ANTI-PARTY!"',
-      vkLink:'https://vk.com/winterantiparty2025',
-      ticketsLink:'https://moscow.qtickets.events/135366-zimniy-festival-anti-party-2025',
-      slug:'addicted_antpt',
-    },
+    // {
+    //   date:'11 января (сб)',
+    //   city:'Москва',
+    //   location:'Зимний Фестиваль "ANTI-PARTY!"',
+    //   vkLink:'https://vk.com/winterantiparty2025',
+    //   ticketsLink:'https://moscow.qtickets.events/135366-zimniy-festival-anti-party-2025',
+    //   slug:'addicted_antpt',
+    // },
     {
       date:'9 апреля (ср)',
       city:'Самара',
@@ -62,7 +62,7 @@ export const Concerts = () => {
       date:'17 апреля (чт)',
       city:'Казань',
       location:'Biblioteka',
-      vkLink:'https://vk.com/winterantiparty2025',
+      vkLink:'https://vk.com/addictedtur',
       ticketsLink:'https://vk.com/app52896043_-228850388',
       slug:'addicted_kazan',
     },
