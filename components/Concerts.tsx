@@ -80,7 +80,7 @@ export const Concerts = () => {
       location:'Территория',
       vkLink:'https://vk.com/addictedtur',
       ticketsLink:'https://vk.com/app52896059_-228850388',
-      slug:'addicted_antpt',
+      slug:'addicted_yar',
     },
     {
       date:'16 мая (пт)',
