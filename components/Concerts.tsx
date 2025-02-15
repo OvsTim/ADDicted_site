@@ -21,7 +21,7 @@ export const Concerts = () => {
     {
       date:'11 апреля (пт)',
       city:'Челябинск',
-      location:'Клуб OZZ',
+      location:'Tarantinoz',
       vkLink:'https://vk.com/addictedtur',
       ticketsLink:'https://vk.com/app52896000',
       slug:'addicted_chel',
