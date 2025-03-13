@@ -1,8 +1,9 @@
 import Image from 'next/image';
 
-import den from '@/public/album/den.webp';
 import rm from '@/public/album/RM.webp';
 import vk from '@/public/music/vk.png';
+import noch from '@/public/album/noch.webp';
+
 import yandex from '@/public/music/yandex.png';
 import Link from 'next/link';
 import { AlbumData } from '@/app/types';
@@ -10,17 +11,18 @@ import { AlbumData } from '@/app/types';
 export const Album = () => {
   const albums: AlbumData[] = [
     {
+      image: noch,
+      linkVk: 'https://music.vk.com/link/VgyEj',
+      linkYm: 'https://music.yandex.ru/album/35726799',
+      slug:'noch',
+    },
+    {
       image:rm,
       linkVk:'https://music.vk.com/link/x1Zfd',
       linkYm:'https://music.yandex.ru/album/33526307',
       slug:'rm',
     },
-    {
-      image: den,
-      linkVk: 'https://music.vk.com/link/cPX2C',
-      linkYm: 'https://music.yandex.ru/album/29853220',
-      slug:'den',
-    },
+
 
   ];
 
