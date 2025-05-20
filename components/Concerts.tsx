@@ -2,30 +2,29 @@ import Link from 'next/link';
 import { ConcertData } from '@/app/types';
 export const Concerts = () => {
   const concerts: ConcertData[] = [
-    // {
-    //   date:'11 января (сб)',
-    //   city:'Москва',
-    //   location:'Зимний Фестиваль "ANTI-PARTY!"',
-    //   vkLink:'https://vk.com/winterantiparty2025',
-    //   ticketsLink:'https://moscow.qtickets.events/135366-zimniy-festival-anti-party-2025',
-    //   slug:'addicted_antpt',
-    // },
     {
-      date:'16 мая (пт)',
-      city:'Москва',
-      location:'Glastonberry',
-      vkLink:'https://vk.com/club228850830',
-      ticketsLink:'https://vk.com/app52896061_-228850388',
-      slug:'addicted_msk',
+      date:'20-22 июня',
+      city:'ANTI-PARTY!',
+      location:'г. Переславль-Залесский, эко-ферма "Джао Да!Ча"',
+      vkLink:'https://vk.com/antiparty2025',
+      ticketsLink:'https://qtickets.ru/event/159616',
+      slug:'anti_2025',
     },
     {
-      date:'17 мая (сб)',
-      city:'Санкт-Петербург',
-      location:'Action',
-      vkLink:'https://vk.com/club228850689',
-      ticketsLink:'https://vk.com/app52896062_-228850388',
-      slug:'addicted_spb',
+      date:'19 июля (сб)',
+      city:'Фестиваль «Лето. И тебе 23»',
+      location:'Рыбинск, балюстрада в Молодёжном парке',
+      vkLink:'https://vk.com/letofest76',
+      slug:'leto76',
     },
+    {
+      date:'22-23 августа',
+      city:'Абалак рок-фест',
+      location:'Тобольск, Парк отдыха "Абалак"',
+      vkLink:'https://vk.com/abalakrockfest',
+      ticketsLink:'https://zagorodnyy-kompleks-abala.timepad.ru/event/3295857/#register',
+      slug:'abalak',
+    }
   ];
 
 
