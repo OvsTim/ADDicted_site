@@ -18,6 +18,14 @@ export const Concerts = () => {
       slug:'leto76',
     },
     {
+      date:'24-27 июля',
+      city:'ПЛЯЖ',
+      location:'Челябинск, территория Тишки',
+      vkLink:'https://vk.com/beachfest74',
+      ticketsLink:'https://beach-fest.ru/',
+      slug:'plyaj',
+    },
+    {
       date:'22-23 августа',
       city:'Абалак рок-фест',
       location:'Тобольск, Парк отдыха "Абалак"',
