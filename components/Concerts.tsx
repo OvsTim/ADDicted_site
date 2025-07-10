@@ -32,6 +32,22 @@ export const Concerts = () => {
       vkLink:'https://vk.com/abalakrockfest',
       ticketsLink:'https://zagorodnyy-kompleks-abala.timepad.ru/event/3295857/#register',
       slug:'abalak',
+    },
+    {
+      date:'30 августа',
+      city:'RECA FEST',
+      location:'BASE Spb',
+      vkLink:'https://vk.com/club231172460',
+      ticketsLink:'https://vk.com/app7371599_-231172460#events2476064',
+      slug:'recaspb',
+    },
+    {
+      date:'6 сентября',
+      city:'RECA FEST',
+      location:'BASE Msk',
+      vkLink:'https://vk.com/recafest_msk25',
+      ticketsLink:'https://vk.com/app7371599_-231172262#events2476061',
+      slug:'recamsk',
     }
   ];
 
