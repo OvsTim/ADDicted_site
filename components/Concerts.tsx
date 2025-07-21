@@ -3,21 +3,6 @@ import { ConcertData } from '@/app/types';
 export const Concerts = () => {
   const concerts: ConcertData[] = [
     {
-      date:'20-22 июня',
-      city:'ANTI-PARTY!',
-      location:'г. Переславль-Залесский, эко-ферма "Джао Да!Ча"',
-      vkLink:'https://vk.com/antiparty2025',
-      ticketsLink:'https://qtickets.ru/event/159616',
-      slug:'anti_2025',
-    },
-    {
-      date:'19 июля (сб)',
-      city:'Фестиваль «Лето. И тебе 23»',
-      location:'Рыбинск, балюстрада в Молодёжном парке',
-      vkLink:'https://vk.com/letofest76',
-      slug:'leto76',
-    },
-    {
       date:'24-27 июля',
       city:'ПЛЯЖ',
       location:'Челябинск, территория Тишки',
@@ -48,7 +33,71 @@ export const Concerts = () => {
       vkLink:'https://vk.com/recafest_msk25',
       ticketsLink:'https://vk.com/app7371599_-231172262#events2476061',
       slug:'recamsk',
-    }
+    },
+    {
+      date:'8 ноября',
+      city:'Архангельск',
+      location:'Колесо',
+      vkLink:'https://vk.com/club231472257',
+      ticketsLink:'https://qtickets.ru/event/173274',
+      slug:'arch',
+    },
+{
+      date:'15 ноября',
+      city:'Санкт-Петербург',
+      location:'Action Club',
+      vkLink:'https://vk.com/club231494757',
+      ticketsLink:'https://vk.com/app53892942_-231494757',
+      slug:'spb',
+    },
+{
+      date:'16 ноября',
+      city:'Москва',
+      location:'Eclipse',
+      vkLink:'https://vk.com/club231495796',
+      ticketsLink:'https://vk.com/app53892945_-231495796',
+      slug:'msk',
+    },
+{
+      date:'21 ноября',
+      city:'Воронеж',
+      location:'Diesel Bar',
+      vkLink:'https://vk.com/club231496254',
+      ticketsLink:'https://vk.com/app53885340_-231496254',
+      slug:'vrn',
+    },
+{
+      date:'22 ноября',
+      city:'Краснодар',
+      location:'Сержант Пеппер',
+      vkLink:'https://vk.com/club231496734',
+      ticketsLink:'https://vk.com/app53885342_-231496734',
+      slug:'krs',
+    },
+{
+      date:'23 ноября',
+      city:'Ростов-на-Дону',
+      location:'Pod3emka',
+      vkLink:'https://vk.com/club231497136',
+      ticketsLink:'https://vk.com/app53885343_-231497136',
+      slug:'rnd',
+    },
+{
+      date:'5 декабря',
+      city:'Иваново',
+      location:'AL ROCK',
+      vkLink:'https://vk.com/club231497624',
+      ticketsLink:'https://vk.com/app53885347_-231497624',
+      slug:'iva',
+    },
+{
+      date:'6 декабря',
+      city:'Рыбинск',
+      location:'Перекресток',
+      vkLink:'https://vk.com/club231497960',
+      ticketsLink:'https://vk.com/app53885350_-231497960',
+      slug:'ryb',
+    },
   ];
 
 
