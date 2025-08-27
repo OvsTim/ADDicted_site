@@ -1,0 +1,100 @@
+[
+  {
+    "date":"2025-07-24T00:00:00.000Z",
+    "dateEnd":"2025-07-27T12:00:00.000Z",
+    "city":"ПЛЯЖ",
+    "location":"Челябинск, территория Тишки",
+    "vkLink":"https://vk.com/beachfest74",
+    "ticketsLink":"https://beach-fest.ru/",
+    "slug":"plyaj"
+  },
+  {
+    "date":"2025-08-22T00:00:00.000Z",
+    "dateEnd":"2025-08-23T12:00:00.000Z",
+    "city":"Абалак рок-фест",
+    "location":"Тобольск, Парк отдыха \"Абалак\"",
+    "vkLink":"https://vk.com/abalakrockfest",
+    "ticketsLink":"https://zagorodnyy-kompleks-abala.timepad.ru/event/3295857/#register",
+    "slug":"abalak"
+  },
+  {
+    "date":"2025-08-30T00:00:00.000Z",
+    "city":"RECA FEST",
+    "location":"BASE Spb",
+    "vkLink":"https://vk.com/club231172460",
+    "ticketsLink":"https://vk.com/app7371599_-231172460#events2476064",
+    "slug":"recaspb"
+  },
+  {
+    "date":"2025-09-06T00:00:00.000Z",
+    "city":"RECA FEST",
+    "location":"BASE Msk",
+    "vkLink":"https://vk.com/recafest_msk25",
+    "ticketsLink":"https://vk.com/app7371599_-231172262#events2476061",
+    "slug":"recamsk"
+  },
+  {
+    "date":"2025-11-08T00:00:00.000Z",
+    "city":"Архангельск",
+    "location":"Колесо",
+    "vkLink":"https://vk.com/club231472257",
+    "ticketsLink":"https://qtickets.ru/event/173274",
+    "slug":"arch"
+  },
+  {
+    "date":"2025-11-15T00:00:00.000Z",
+    "city":"Санкт-Петербург",
+    "location":"Action Club",
+    "vkLink":"https://vk.com/club231494757",
+    "ticketsLink":"https://vk.com/app53892942_-231494757",
+    "slug":"spb"
+  },
+  {
+    "date":"2025-11-16T00:00:00.000Z",
+    "city":"Москва",
+    "location":"Eclipse",
+    "vkLink":"https://vk.com/club231495796",
+    "ticketsLink":"https://vk.com/app53892945_-231495796",
+    "slug":"msk"
+  },
+  {
+    "date":"2025-11-21T00:00:00.000Z",
+    "city":"Воронеж",
+    "location":"Diesel Bar",
+    "vkLink":"https://vk.com/club231496254",
+    "ticketsLink":"https://vk.com/app53885340_-231496254",
+    "slug":"vrn"
+  },
+  {
+    "date":"2025-11-22T00:00:00.000Z",
+    "city":"Краснодар",
+    "location":"Сержант Пеппер",
+    "vkLink":"https://vk.com/club231496734",
+    "ticketsLink":"https://vk.com/app53885342_-231496734",
+    "slug":"krs"
+  },
+  {
+    "date":"2025-11-23T00:00:00.000Z",
+    "city":"Ростов-на-Дону",
+    "location":"Pod3emka",
+    "vkLink":"https://vk.com/club231497136",
+    "ticketsLink":"https://vk.com/app53885343_-231497136",
+    "slug":"rnd"
+  },
+  {
+    "date":"2025-12-05T00:00:00.000Z",
+    "city":"Иваново",
+    "location":"AL ROCK",
+    "vkLink":"https://vk.com/club231497624",
+    "ticketsLink":"https://vk.com/app53885347_-231497624",
+    "slug":"iva"
+  },
+  {
+    "date":"2025-12-06T00:00:00.000Z",
+    "city":"Рыбинск",
+    "location":"Перекресток",
+    "vkLink":"https://vk.com/club231497960",
+    "ticketsLink":"https://vk.com/app53885350_-231497960",
+    "slug":"ryb"
+  }
+]

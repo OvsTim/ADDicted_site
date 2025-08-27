@@ -1,113 +1,48 @@
+'use client';
 import Link from 'next/link';
 import { ConcertData } from '@/app/types';
+import {useEffect, useState} from "react";
 export const Concerts = () => {
-  const concerts: ConcertData[] = [
-    {
-      date:'24-27 июля',
-      city:'ПЛЯЖ',
-      location:'Челябинск, территория Тишки',
-      vkLink:'https://vk.com/beachfest74',
-      ticketsLink:'https://beach-fest.ru/',
-      slug:'plyaj',
-    },
-    {
-      date:'22-23 августа',
-      city:'Абалак рок-фест',
-      location:'Тобольск, Парк отдыха "Абалак"',
-      vkLink:'https://vk.com/abalakrockfest',
-      ticketsLink:'https://zagorodnyy-kompleks-abala.timepad.ru/event/3295857/#register',
-      slug:'abalak',
-    },
-    {
-      date:'30 августа',
-      city:'RECA FEST',
-      location:'BASE Spb',
-      vkLink:'https://vk.com/club231172460',
-      ticketsLink:'https://vk.com/app7371599_-231172460#events2476064',
-      slug:'recaspb',
-    },
-    {
-      date:'6 сентября',
-      city:'RECA FEST',
-      location:'BASE Msk',
-      vkLink:'https://vk.com/recafest_msk25',
-      ticketsLink:'https://vk.com/app7371599_-231172262#events2476061',
-      slug:'recamsk',
-    },
-    {
-      date:'8 ноября',
-      city:'Архангельск',
-      location:'Колесо',
-      vkLink:'https://vk.com/club231472257',
-      ticketsLink:'https://qtickets.ru/event/173274',
-      slug:'arch',
-    },
-{
-      date:'15 ноября',
-      city:'Санкт-Петербург',
-      location:'Action Club',
-      vkLink:'https://vk.com/club231494757',
-      ticketsLink:'https://vk.com/app53892942_-231494757',
-      slug:'spb',
-    },
-{
-      date:'16 ноября',
-      city:'Москва',
-      location:'Eclipse',
-      vkLink:'https://vk.com/club231495796',
-      ticketsLink:'https://vk.com/app53892945_-231495796',
-      slug:'msk',
-    },
-{
-      date:'21 ноября',
-      city:'Воронеж',
-      location:'Diesel Bar',
-      vkLink:'https://vk.com/club231496254',
-      ticketsLink:'https://vk.com/app53885340_-231496254',
-      slug:'vrn',
-    },
-{
-      date:'22 ноября',
-      city:'Краснодар',
-      location:'Сержант Пеппер',
-      vkLink:'https://vk.com/club231496734',
-      ticketsLink:'https://vk.com/app53885342_-231496734',
-      slug:'krs',
-    },
-{
-      date:'23 ноября',
-      city:'Ростов-на-Дону',
-      location:'Pod3emka',
-      vkLink:'https://vk.com/club231497136',
-      ticketsLink:'https://vk.com/app53885343_-231497136',
-      slug:'rnd',
-    },
-{
-      date:'5 декабря',
-      city:'Иваново',
-      location:'AL ROCK',
-      vkLink:'https://vk.com/club231497624',
-      ticketsLink:'https://vk.com/app53885347_-231497624',
-      slug:'iva',
-    },
-{
-      date:'6 декабря',
-      city:'Рыбинск',
-      location:'Перекресток',
-      vkLink:'https://vk.com/club231497960',
-      ticketsLink:'https://vk.com/app53885350_-231497960',
-      slug:'ryb',
-    },
-  ];
+
+    const [concerts, setConcerts] = useState<ConcertData[]>([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState<string | null>(null);
+
+    const fetchConcerts = async () => {
+        try {
+            setLoading(true);
+            const response = await fetch('/api/concerts');
+
+            if (!response.ok) {
+                throw new Error('Failed to fetch concerts');
+            }
+
+            const data:ConcertData[] = await response.json();
+            setConcerts(data.filter(it=>new Date(it.date).getTime() > new Date().getTime()));
+            setError(null);
+        } catch (err) {
+            setError(err instanceof Error ? err.message : 'An error occurred');
+        } finally {
+            setLoading(false);
+        }
+    };
+
+    useEffect(() => {
+        fetchConcerts();
+    }, []);
 
 
   return (
     <div className='flex flex-col items-start m-auto lg:w-[1024px] w-full px-10 lg:px-0' >
-      {concerts.length === 0 &&
+        {loading &&
+        <h3 className={'text-white text-2xl content-center w-full text-center py-20 md:text-4xl'}>
+          Загрузка ...
+        </h3>
+        }
+      {concerts.length === 0 && !loading &&
       <h3 className={'text-white text-2xl content-center w-full text-center py-20 md:text-4xl'}>
         Концерты завершены. Новые даты скоро!
       </h3>
-
       }
       {/*начало блока концерта*/}
       {concerts.map((concert) => (
@@ -119,7 +54,8 @@ export const Concerts = () => {
         >
           <div className={'flex flex-col place-content-start md:flex-row place-items-center w-full md:space-x-2'}>
             <h5 className='w-full text-xl font-bold text-white md:w-1/2 text-left md:text-center md:text-2xl'>
-              {concert.date}
+              {concert.dateEnd?new Date(concert.date).toLocaleDateString("ru-RU",{month:"long",day:"numeric"})+' - '+new Date(concert.dateEnd).toLocaleDateString("ru-RU",{month:"long",day:"numeric"})
+                  : new Date(concert.date).toLocaleDateString("ru-RU",{month:"long",day:"numeric"})}
             </h5>
             <h5 className=' w-full text-2xl text-left font-bold text-white md:w-1/3 md:text-xl md:text-center'>
               {concert.city}

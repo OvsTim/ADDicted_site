@@ -11,6 +11,7 @@ export interface ConcertData {
   location: string;
   city: string;
   date: string;
+  dateEnd?: string;
   vkLink: string;
   ticketsLink?: string;
   slug:string;
