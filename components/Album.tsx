@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import rm from '@/public/album/RM.webp';
+import pochemuTak from '@/public/album/pochemu_tak.webp';
 import vk from '@/public/music/vk.png';
 import noch from '@/public/album/noch.webp';
 
@@ -10,20 +10,18 @@ import { AlbumData } from '@/app/types';
 
 export const Album = () => {
   const albums: AlbumData[] = [
+      {
+          image:pochemuTak,
+          linkVk:'https://vk.ru/music/album/-2000342817_25342817',
+          linkYm:'https://music.yandex.ru/album/38348864',
+          slug:'pochemuTak',
+      },
     {
       image: noch,
       linkVk: 'https://music.vk.com/link/VgyEj',
       linkYm: 'https://music.yandex.ru/album/35726799',
       slug:'noch',
-    },
-    {
-      image:rm,
-      linkVk:'https://music.vk.com/link/x1Zfd',
-      linkYm:'https://music.yandex.ru/album/33526307',
-      slug:'rm',
-    },
-
-
+    }
   ];
 
   return (
