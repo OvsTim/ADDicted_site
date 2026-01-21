@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 import pochemuTak from '@/public/album/pochemu_tak.webp';
 import vk from '@/public/music/vk.png';
-import noch from '@/public/album/noch.webp';
+import otgoloski from '@/public/album/otgoloski.webp';
 
 import yandex from '@/public/music/yandex.png';
 import Link from 'next/link';
@@ -10,18 +10,25 @@ import { AlbumData } from '@/app/types';
 
 export const Album = () => {
   const albums: AlbumData[] = [
+
+      {
+          image:otgoloski,
+          linkVk:'https://band.link/RiFCD',
+          linkYm:'https://band.link/RiFCD',
+          slug:'otgoloski',
+      },
       {
           image:pochemuTak,
           linkVk:'https://vk.ru/music/album/-2000342817_25342817',
           linkYm:'https://music.yandex.ru/album/38348864',
           slug:'pochemuTak',
       },
-    {
-      image: noch,
-      linkVk: 'https://music.vk.com/link/VgyEj',
-      linkYm: 'https://music.yandex.ru/album/35726799',
-      slug:'noch',
-    }
+    // {
+    //   image: noch,
+    //   linkVk: 'https://music.vk.com/link/VgyEj',
+    //   linkYm: 'https://music.yandex.ru/album/35726799',
+    //   slug:'noch',
+    // }
   ];
 
   return (
